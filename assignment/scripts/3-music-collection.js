@@ -36,6 +36,9 @@ function showCollection (collection) {
     console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}.`);
   }
 }
+//Use and test the showCollection function
+showCollection(myCollection);
+
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
