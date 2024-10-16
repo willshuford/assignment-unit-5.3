@@ -8,6 +8,7 @@ let myCollection = [];
 function addToCollection(collection, title, artist, yearPublished) {
 //Create a new object having the above properties
 let album = {
+  collection: collection,
   title: title,
   artist: artist,
   yearPublished: yearPublished,
@@ -18,7 +19,16 @@ collection.push(album);
 return album;
 }
 
+//Add 6 albums to the myCollection array, console.log each album as added using the function's returned value.
+console.log(addToCollection(myCollection, "The Black Album", "Jay Z", "2003"));
+console.log(addToCollection(myCollection, "Purple Rain", "Prince", "1984"));
+console.log(addToCollection(myCollection, "Reasonable Doubt", "Jay Z", "1996"));
+console.log(addToCollection(myCollection, "Kind of Blue", "Miles Davis", "1959"));
+console.log(addToCollection(myCollection, "Mingus Ah Um", "Charles Mingus", "1959"));
+console.log(addToCollection(myCollection, "Bad", "Michael Jackson", "1987"));
 
+//console.log the myCollection array
+console.log(myCollection);
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
