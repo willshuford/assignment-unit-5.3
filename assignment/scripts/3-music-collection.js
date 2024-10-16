@@ -30,6 +30,13 @@ console.log(addToCollection(myCollection, "Bad", "Michael Jackson", "1987"));
 //console.log the myCollection array
 console.log(myCollection);
 
+//Create a function named showCollection
+function showCollection (collection) {
+  for (i=0; i<collection.length; i++){
+    console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}.`);
+  }
+}
+
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
