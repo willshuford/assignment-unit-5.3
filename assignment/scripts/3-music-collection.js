@@ -2,15 +2,21 @@ console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 
 //Create an empty array named myCollection
-let myCollection [];
+let myCollection = [];
 
 //Create a function named addToCollection
 function addToCollection(collection, title, artist, yearPublished) {
-  // your code here...
+//Create a new object having the above properties
+let album = {
+  title: title,
+  artist: artist,
+  yearPublished: yearPublished,
+};
+//Add the new object to the end of the collection array.
+collection.push(album);
+//return the newly created object
+return album;
 }
-
-
-
 
 
 
