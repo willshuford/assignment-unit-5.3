@@ -20,9 +20,9 @@ return album;
 }
 
 //Add 6 albums to the myCollection array, console.log each album as added using the function's returned value.
-console.log(addToCollection(myCollection, "The Black Album", "Jay Z", "2003"));
+console.log(addToCollection(myCollection, "The Black Album", "Jay-Z", "2003"));
 console.log(addToCollection(myCollection, "Purple Rain", "Prince", "1984"));
-console.log(addToCollection(myCollection, "Reasonable Doubt", "Jay Z", "1996"));
+console.log(addToCollection(myCollection, "Reasonable Doubt", "Jay-Z", "1996"));
 console.log(addToCollection(myCollection, "Kind of Blue", "Miles Davis", "1959"));
 console.log(addToCollection(myCollection, "Mingus Ah Um", "Charles Mingus", "1959"));
 console.log(addToCollection(myCollection, "Bad", "Michael Jackson", "1987"));
@@ -38,6 +38,23 @@ function showCollection (collection) {
 }
 //Use and test the showCollection function
 showCollection(myCollection);
+
+//Create a function named findByArtist
+function findByArtist (collection, artist) {
+  let matchingResults = [];
+    for (i=0; i<collection.length; i++){
+    if (collection[i].artist.toLowerCase() === artist.toLowerCase()) {
+      matchingResults.push(collection[i]);
+    }
+}
+return matchingResults;
+}
+
+
+
+console.log(findByArtist(myCollection, "Jay-Z"));
+console.log(findByArtist(myCollection, "Frank Zappa"));
+
 
 
 
